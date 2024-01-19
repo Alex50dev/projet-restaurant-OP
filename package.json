@@ -1,0 +1,9 @@
+{
+	"name": "ohmyfood",
+	"version": "1.0.0",
+	"description": "site de menu de restaurant",
+	"scripts": {
+		"sass": "sass --watch ./sass/main.scss:./assets/css/style.css"
+	},
+	"author": "Alexis Levesque"
+}

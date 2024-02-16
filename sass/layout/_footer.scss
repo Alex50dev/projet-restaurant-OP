@@ -1,0 +1,49 @@
+footer {
+    background-color: $color-footer;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    margin-top: -60px;
+    .logo-footer {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+}
+
+.footer-main {
+    background-color: $color-footer;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    .logo-footer {
+        font-family: Shrikhand;
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.24px;
+    }
+}
+
+@media (min-width: 980px) {
+    .footer-main {
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 70px;
+    }
+    .logo-container {
+        display: flex;
+    }
+    .logo-footer {
+        margin: auto;
+    }
+    .footer-menu {
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+}

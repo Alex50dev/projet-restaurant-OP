@@ -1,2 +1,11 @@
+@import "./abstracts/variables";
+@import "./abstracts/keyframes";
+@import "./layout/loader.scss";
+@import "./layout/header.scss";
 @import "./pages/index";
+@import "./pages/restaurant";
+@import "./layout/main_menu.scss";
+@import "./layout/section_menu.scss";
 @import "./components/buttons";
+@import "./layout/footer";
+@import "./layout/animation_cards.scss"

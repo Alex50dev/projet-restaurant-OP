@@ -1,7 +1,44 @@
 .main-button {
+    font-size: 16px;
+    border: 1px;
     height: 60px;
-    width: 200px;
+    width: 219px;
     border-radius: 50px;
     color: white;
-    background-color: violet
+    background: $btn-heart-background
+}
+
+.button-heart {
+    text-align: center;
+    gap: 20px;
+}
+
+.box_menu_title {
+
+    .heart {
+        position: relative;
+        z-index: 1;
+        &:hover {
+            & .heart-colored {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .heart-colored {
+        position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: transform 750ms ease-in-out;
+    }
+
 }

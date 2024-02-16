@@ -1,0 +1,32 @@
+.card {
+    &:hover .card {
+        background-color: $green;
+        transform: translate(0);
+    }
+}
+
+.card {
+    &:hover .price {
+        transform: translate(-220%);
+    }
+}
+
+.card {
+    &:hover .card-text {
+        display: inline-block;
+        width: 235px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.card-plat {
+    &:hover>.card-check-box {
+        transition: width 400ms ease-in-out;
+        width: 50px;
+        i {
+            opacity: 1;
+        }
+    }
+}

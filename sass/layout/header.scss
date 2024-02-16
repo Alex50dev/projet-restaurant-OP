@@ -1,0 +1,41 @@
+header {
+    flex-direction: column;
+    text-align: center;
+    .logo-header {
+        margin: 20px 0 15px 0;
+        width: 40%;
+    }
+    .localisation {
+        background-color: $color-formulaire;
+        width: 100%;
+        box-shadow: 6px 6px 6px;
+        height: 50px;
+    }
+
+    input {
+        height: 20px;
+        border: none;
+        margin: 15px;
+        background-color: $color-formulaire;
+        width: 100px;
+        color: $color-footer;
+    }
+
+    .header_link {
+        padding-top: 15px;
+        position: absolute;
+        left: 15px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    @media (min-width: 960px) {
+        header {
+            height: 95px;
+        }
+
+        .logo-header {
+            width: 200px;
+        }
+    }
+}

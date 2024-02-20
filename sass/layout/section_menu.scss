@@ -8,8 +8,16 @@
     position: relative;
     top: -60px;
     border-radius: 40px 40px 0 0;
-    background: #f6f6f6;
+    background: $main-background;
     padding: 40px 15px;
+}
+
+@media screen and (min-width: 960px) {
+    .section_menu {
+        margin: auto;
+        background: $main-background;
+        top: -45px;
+    }
 }
 
 .cards {
@@ -150,5 +158,13 @@
         font-style: italic;
         font-size: 28px;
         font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .box_menu_title {
+        margin: auto;
+        justify-content: center;
+        gap: 30px;
     }
 }

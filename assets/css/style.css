@@ -12,12 +12,26 @@
     opacity: 1;
   }
 }
-@keyframes animationMenu {
+@keyframes animationplat {
   0% {
-    transform: translateY(1999px);
+    transform: translateY(200px);
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
   }
 }
 .section__loader {
@@ -87,20 +101,6 @@
   -webkit-animation: grow 1.5s linear -1s 5;
 }
 
-@keyframes grow {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-}
 header {
   flex-direction: column;
   text-align: center;
@@ -239,7 +239,7 @@ main .intro-p {
   margin: 10px 0;
   color: black;
   text-decoration: none;
-  animation: animationMenu 1s both;
+  animation: animationplat 1s both;
 }
 .card-plat h4,
 .card-plat p {
@@ -272,7 +272,7 @@ main .intro-p {
 }
 
 .main_menu {
-  background-color: lightgrey;
+  background-color: #F6F6F6;
 }
 
 .main_img_menu {
@@ -296,20 +296,13 @@ main .intro-p {
   gap: 175px;
 }
 
-@media (min-width: 365px) {
+@media screen and (min-width: 960px) {
+  .main_img_menu {
+    height: 1000px;
+    width: 100%;
+  }
   .main_menu {
-    min-height: 1298px;
-  }
-  .la-note-enchantee {
-    height: 1385px;
-  }
-}
-@media (min-width: 1440px) {
-  .main__menu {
-    height: 1624px;
-  }
-  .main__img__menu {
-    height: 572px;
+    background: white;
   }
 }
 .section_menu {
@@ -322,10 +315,17 @@ main .intro-p {
   position: relative;
   top: -60px;
   border-radius: 40px 40px 0 0;
-  background: #f6f6f6;
+  background: #F6F6F6;
   padding: 40px 15px;
 }
 
+@media screen and (min-width: 960px) {
+  .section_menu {
+    margin: auto;
+    background: #F6F6F6;
+    top: -45px;
+  }
+}
 .cards {
   display: flex;
   flex-direction: row;
@@ -450,7 +450,31 @@ main .intro-p {
   font-weight: 400;
 }
 
+@media screen and (min-width: 960px) {
+  .box_menu_title {
+    margin: auto;
+    justify-content: center;
+    gap: 30px;
+  }
+}
 .main-button {
+  font-size: 16px;
+  border: 1px;
+  height: 60px;
+  width: 219px;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  transition: transform 0.1s;
+}
+
+.main-button:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.menu-button {
   font-size: 16px;
   border: 1px;
   height: 60px;
@@ -488,26 +512,13 @@ main .intro-p {
   transition: transform 750ms ease-in-out;
 }
 
-footer {
-  background-color: #353535;
-  margin: 0;
-  padding: 20px;
-  text-align: left;
-  color: white;
-  margin-top: -60px;
-}
-footer .logo-footer {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .footer-main {
   background-color: #353535;
   margin: 0;
   padding: 20px;
   text-align: left;
   color: white;
+  top: 60px;
 }
 .footer-main .logo-footer {
   font-family: Shrikhand;

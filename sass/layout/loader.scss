@@ -1,75 +1,4 @@
-.section__loader {
-    pointer-events: none;
-    opacity: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    text-align: center;
-    line-height: 18;
-    font-size: 50px;
-    font-family: Shrikhand;
-    animation: linaer-gradient 0.5s linear 1;
-    -webkit-animation: linaer-gradient 0.5s linear 1;
-}
-
-
-
-.loader {
-    width: 50px;
-    height: 39px;
-    left: 411px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-}
-
-.loader__bars::before {
-   content: '';
-   display: block;
-   position: absolute;
-   left: 0;
-   width: 10px;
-   height: 30px;
-   border-radius: 100%;
-   background: #101010;
-   animation: grow 1.5s linear 1;
-   -webkit-animation: grow 1.5s linear 1;
-   -webkit-border-radius: 100%;
-   -moz-border-radius: 100%;
-   -ms-border-radius: 100%;
-   -o-border-radius: 100%;
-}
-
-
-.loader__bars::after {
-   content: '';
-   display: block;
-   position: absolute;
-   left: 15px;
-   border-radius: 100%;
-   width: 10px;
-   height: 30px;
-   background: #101010;
-   animation: grow 1.5s linear -.5s 5;
-   -webkit-animation: grow 1.5s linear -.5s 5;
-}
-
-.loader__bars span {
-   content: '';
-   display: block;
-   position: absolute;
-   left: 30px;
-   border-radius: 100%;
-   width: 10px;
-   height: 30px;
-   background: #101010;
-   animation: grow 1.5s linear -1s 5;
-   -webkit-animation: grow 1.5s linear -1s 5;
-}
-
 .loader-container {
-   position: fixed;
    top: 0;
    left: 0;
    width: 100%;
@@ -77,15 +6,15 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   animation: hideLoaderContainer 2s;
  }
 
  .overlay {
-   position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
-   animation: linaer-gradient 0.5s linear 1;
+   animation: linaer-gradient 0.5s linear 1, hideLoaderOverlay 7s forwards;
    z-index: 1;
  }
 
@@ -105,7 +34,8 @@
   margin-bottom: 10px;
  }
 
- .loader-text{
-   font-size: 16px;
+ .loader-text {
+   font-family: Shrikhand;
+   font-size: 50px;
    animation: hideLoader 2s forwards;
  }

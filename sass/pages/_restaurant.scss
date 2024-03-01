@@ -1,3 +1,16 @@
+.header-menu {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    .header_link {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .logo-header {
+        margin: auto;
+     }
+}
 .card-plat {
     width: 100%;
     justify-content: space-between;

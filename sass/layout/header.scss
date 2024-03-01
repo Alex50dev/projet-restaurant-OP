@@ -1,10 +1,6 @@
 header {
     flex-direction: column;
     text-align: center;
-    .logo-header {
-        margin: 20px 0 15px 0;
-        width: 40%;
-    }
     .localisation {
         background-color: $color-formulaire;
         width: 100%;
@@ -21,15 +17,13 @@ header {
         color: $color-footer;
     }
 
-    .header_link {
-        padding-top: 15px;
-        position: absolute;
-        left: 15px;
-        font-size: 30px;
-        font-weight: 400;
-    }
-
     @media (min-width: 960px) {
+        header {
+            height: 95px;
+        }
+    }
+/*
+    @media (min-width: 932px) {
         header {
             height: 95px;
         }
@@ -37,5 +31,13 @@ header {
         .logo-header {
             width: 200px;
         }
-    }
+    }*/
+}
+
+.logo-header {
+   font-family: Shrikhand;
+        font-style: italic;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 26.24px;
 }

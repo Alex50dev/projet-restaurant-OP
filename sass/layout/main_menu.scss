@@ -1,17 +1,28 @@
 .main_menu {
     background-color: $main-background;
-    overflow: hidden;
-}
-
-.hidden {
-    overflow: hidden;
 }
 
 .image-container {
-    display: flex;
-        flex-direction: column-reverse;
         width: 100%;
         height: 250px;
+        background-position: bottom;
+        background-size: cover;
+}
+
+.image-container-af {
+    background-image: url("../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.image-container-ne {
+    background-image: url("../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.image-container-pg {
+    background-image: url("../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.image-container-ds {
+    background-image: url("../../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .text-card {
@@ -33,11 +44,6 @@
 @media screen and (min-width: 1055px) {
     .image-container {
         height: 383px !important;
-        overflow: hidden;
-
-        img {
-            margin-bottom: -350px;
-        }
      }
 
      .main_menu {

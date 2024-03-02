@@ -339,37 +339,6 @@ main .intro-p {
     background: white;
   }
 }
-/*modifications
-@media screen and (min-width: 412px) {
-    .image-container {
-        height: 299px !important;
-
-        img {
-            margin-bottom: 24px;
-        }
-     }
-
-     .main_menu {
-        background: white;
-     }
-
-}
-
-@media screen and (min-width: 930px) {
-    .image-container {
-        height: 500px !important;
-
-        img {
-            margin-bottom: 14px;
-            height: 100%;
-        }
-     }
-
-     .main_menu {
-        background: white;
-     }
-
-}*/
 .section_menu {
   box-sizing: border-box;
   max-width: 1055px;
